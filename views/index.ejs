@@ -47,6 +47,8 @@
 </head> 
 
 <body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
     <!-- ******HEADER****** --> 
     <header class="header">
         <div class="container">                       
@@ -104,52 +106,72 @@
                <section class="latest section">
                     <div class="section-inner">
                         <h2 class="heading">Projects</h2>
-                        <div class="content">  
-                            <div class="item row">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                          <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                          </ol>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <div class="item row d-block w-100">
                                 <a class="col-md-4 col-12" href="https://github.com/frizzid07/Artisan-Ecommerce" target="_blank">
                                 <img class="img-fluid project-image" src="client/images/scr3.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
+                                </a><hr>
+                                <div class="desc col-12">
                                     <h3 class="title"><a href="https://github.com/frizzid07/Artisan-Ecommerce" target="_blank">Artisan Ecommerce Portal</a></h3>
                                     <p class="mb-2">A web application for local artists and craftsmen to showcase their talent in front of the entire world. It includes features like product recommendations, AI powered chatbot and multilingual support.</p>
                                     <p><a class="more-link" href="https://github.com/frizzid07/Artisan-Ecommerce" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
                                 </div><!--//desc-->                          
                             </div><!--//item-->
-                        
-                            <div class="item row">
+                            </div>
+                            <div class="carousel-item">
+                              <div class="item row d-block w-100">
                                 <a class="col-md-4 col-12" href="https://github.com/frizzid07/TSEC_HACK" target="_blank">
                                 <img class="img-fluid project-image" src="client/images/scr1.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
+                                </a><hr>
+                                <div class="desc col-12">
                                     <h3 class="title"><a href="https://github.com/frizzid07/TSEC_HACK" target="_blank">New Hope Foundation</a></h3>
                                     <p class="mb-2">A web application for an orphanage, allowing them to organise fundraisers, events & live interaction developed using Node.js, Express.js & MongoDB. This project was elected as a Finalist for TSEC Hackathon 2019.</p>
                                     <p><a class="more-link" href="https://github.com/frizzid07/TSEC_HACK" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
                                 </div><!--//desc-->                          
                             </div><!--//item-->
-                            
-                            <div class="item row">
+                            </div>
+                            <div class="carousel-item">
+                            <div class="item row d-block w-100">
                                 <a class="col-md-4 col-12" href="http://vlift.herokuapp.com" target="_blank">
                                 <img class="img-fluid project-image" src="client/images/scr2.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
+                                </a><hr>
+                                <div class="desc col-12">
                                     <h3 class="title"><a href="http://vlift.herokuapp.com" target="_blank">VLift: Customer Service Portal</a></h3>
                                     <p class="mb-2">A web application for directly connecting users and service professionals, developed using Node.js & MongoDB as a Freelance Developer for VLift Pvt. Ltd.</p>
                                     <p><a class="more-link" href="https://github.com/frizzid07/vlift" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
                                 </div><!--//desc-->                          
                             </div><!--//item-->
-                            
-                            <div class="item row">
+                            </div>
+                            <div class="carousel-item">
+                            <div class="item row d-block w-100">
                                 <a class="col-md-4 col-12" href="http://box4u.herokuapp.com/" target="_blank">
                                 <img class="img-fluid project-image" src="client/images/scr4.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
+                                </a><hr>
+                                <div class="desc col-12">
                                     <h3 class="title"><a href="http://box4u.herokuapp.com/" target="_blank">Box4U: Online Food Ordering Portal</a></h3>
                                     <p class="mb-2">A web portal for online food ordering and delivery providing a range of items belonging to a variety of cuisines.</p>
                                     <p><a class="more-link" href="https://github.com/frizzid07/WDLProject" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
                                 </div><!--//desc-->                          
                             </div><!--//item-->
-                            
-                        </div><!--//content-->  
+                            </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
                     </div><!--//section-inner-->                
                 </section><!--//section-->
                 
@@ -162,21 +184,21 @@
                                 <p>Worked as the Chief Editor for the online magazine 'Decrypt' by CSI RAIT from August 2018-present.</p>
                             </div><!--//item-->
                             <div class="item">
-                                <h3 class="title">Web Developer - <span class="place"><a href="https://www.vlift.in/">VLift</a></span> <span class="year">(December 2018 - January 2019)</span></h3>
+                                <h3 class="title">Freelance Web Developer - <span class="place"><a href="https://www.vlift.in/">VLift</a></span> <span class="year">(December 2018 - January 2019)</span></h3>
                                 <p>Developed a web application for connecting service professionals and customers.</p>
                             </div><!--//item-->
                             
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
-                    <section class="github section">
-                    <div class="calendar section-inner">
-                        <!-- Prepare a container for your calendar. -->
-                        <h2 class="heading">My Hackerrank</h2>
-                        <blockquote class="embedly-card"><h4><a href="https://www.hackerrank.com/Frizzid07">Tanmay Bhagwat (Frizzid07) on HackerRank</a></h4><p>Join over 5 million developers in solving code challenges on HackerRank, one of the best ways to prepare for programming interviews.</p></blockquote>
-                        <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
-                    </div><!--//secton-inner-->
-                </section><!--//section-->
+                
+                <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">My Instagram Feed</h2>
+                        <div id="pixlee_container"></div><script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'SxKqLNErpiBK67eR8SFW'});Pixlee.addSimpleWidget({widgetId:'17235'});};</script><script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
+                    </div>
+                </section>
+                
             </div><!--//primary-->
             <div class="secondary col-lg-4 col-12">
                  <aside class="info aside section">
@@ -196,13 +218,19 @@
                     <div class="section-inner">
                         <h2 class="heading">Skills</h2>
                         <div class="content">
-                            <p class="intro">
-                                Intro about your skills goes here. Keep the list lean and only show your primary skillset. You can always provide a link to your Linkedin or Coderwall profile so people can get more info there.</p>
                             
                             <div class="skillset">
                                
                                 <div class="item">
-                                    <h3 class="level-title">Python &amp; Django<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <h3 class="level-title">JavaScript &amp; Node.js<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="86%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">HTML5 &amp; CSS3<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="96%">
                                         </div>                                      
@@ -210,30 +238,20 @@
                                 </div><!--//item-->
                                 
                                 <div class="item">
-                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <h3 class="level-title">Java<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
+                                        <div class="level-bar-inner" data-level="70%">
                                         </div>                                      
                                     </div><!--//level-bar-->                                 
                                 </div><!--//item-->
                                 
                                 <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <h3 class="level-title">Python<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
+                                        <div class="level-bar-inner" data-level="80%">
                                         </div>                                      
                                     </div><!--//level-bar-->                                 
                                 </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Ruby on Rails<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="85%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on Coderwall</a></p> 
                             </div>              
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
@@ -241,18 +259,10 @@
                             
                 <aside class="languages aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Languages</h2>
+                        <h2 class="heading">My Hackerrank</h2>
                         <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>Spanish:</strong></span>
-                                    <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
-                                </li><!--//item-->
-                            </ul>
+                            <blockquote class="embedly-card"><h4><a href="https://www.hackerrank.com/Frizzid07">Tanmay Bhagwat (Frizzid07) on HackerRank</a></h4><p>Join over 5 million developers in solving code challenges on HackerRank, one of the best ways to prepare for programming interviews.</p></blockquote>
+                            <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
@@ -294,14 +304,54 @@
                 
                 <aside class="list music aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Favourite coding music</h2>
+                        <h2 class="heading">My Facebook Page</h2>
+                        <div class="fb-page" data-href="https://www.facebook.com/CsiRaitDecrypt/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/CsiRaitDecrypt/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/CsiRaitDecrypt/">Decrypt</a></blockquote></div>
+                    </div>
+                </aside>
+                
+                <aside class="list music aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Quora Feed</h2>
                         <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="#">Ut sollicitudin in mauris non auctor</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="#">Duis et felis bibendum</a></li>
-                            </ul>
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                              <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                              </ol>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <span class='quora-content-embed d-block w-100' data-name='You-have-2-minutes-to-tell-your-10-year-old-self-as-much-as-possible-What-do-you-say/answer/Tanmay-Bhagwat-4'>Read <a class='quora-content-link' data-width='560' data-height='260' href='https://www.quora.com/You-have-2-minutes-to-tell-your-10-year-old-self-as-much-as-possible-What-do-you-say/answer/Tanmay-Bhagwat-4' data-type='answer' data-id='116867250' data-key='506a753a5a1bd73b621c5049bf46db1a' load-full-answer='False' data-embed='vdkhtwi'><a href='https://www.quora.com/Tanmay-Bhagwat-4'>Tanmay Bhagwat</a>&#039;s <a href='/You-have-2-minutes-to-tell-your-10-year-old-self-as-much-as-possible-What-do-you-say#ans116867250'>answer</a> to <a href='/You-have-2-minutes-to-tell-your-10-year-old-self-as-much-as-possible-What-do-you-say' ref='canonical'><span class="rendered_qtext">You have 2 minutes to tell your 10 year old self as much as possible. What do you say?</span></a></a> on <a href='https://www.quora.com'>Quora</a><script type="text/javascript" src="https://www.quora.com/widgets/content"></script></span>
+                                </div>
+                                <div class="carousel-item">
+                                    <span class='quora-content-embed d-block w-100' data-name='How-would-you-explain-programming-to-someone-who-is-slow/answer/Tanmay-Bhagwat-4'>Read <a class='quora-content-link' data-width='560' data-height='260' href='https://www.quora.com/How-would-you-explain-programming-to-someone-who-is-slow/answer/Tanmay-Bhagwat-4' data-type='answer' data-id='110607215' data-key='87ec3f37f587135c219abc26ded198e7' load-full-answer='False' data-embed='vdkhtwi'><a href='https://www.quora.com/Tanmay-Bhagwat-4'>Tanmay Bhagwat</a>&#039;s <a href='/How-would-you-explain-programming-to-someone-who-is-slow#ans110607215'>answer</a> to <a href='/How-would-you-explain-programming-to-someone-who-is-slow' ref='canonical'><span class="rendered_qtext">How would you explain programming to someone who is slow?</span></a></a> on <a href='https://www.quora.com'>Quora</a><script type="text/javascript" src="https://www.quora.com/widgets/content"></script></span>
+                                </div>
+                                <div class="carousel-item">
+                                    <span class='quora-content-embed d-block w-100' data-name='How-does-the-ratio-on-Medium-work-I-get-lots-of-views-but-my-ratio-is-low-Is-this-typical-or-down-to-writing-quality/answer/Tanmay-Bhagwat-4'>Read <a class='quora-content-link' data-width='560' data-height='260' href='https://www.quora.com/How-does-the-ratio-on-Medium-work-I-get-lots-of-views-but-my-ratio-is-low-Is-this-typical-or-down-to-writing-quality/answer/Tanmay-Bhagwat-4' data-type='answer' data-id='79353151' data-key='6af4a4ce9b7440be19f2015944b61736' load-full-answer='False' data-embed='vdkhtwi'><a href='https://www.quora.com/Tanmay-Bhagwat-4'>Tanmay Bhagwat</a>&#039;s <a href='/How-does-the-ratio-on-Medium-work-I-get-lots-of-views-but-my-ratio-is-low-Is-this-typical-or-down-to-writing-quality#ans79353151'>answer</a> to <a href='/How-does-the-ratio-on-Medium-work-I-get-lots-of-views-but-my-ratio-is-low-Is-this-typical-or-down-to-writing-quality' ref='canonical'><span class="rendered_qtext">How does the ratio on Medium work? I get lots of views but my ratio is low. Is this typical or down to writing quality?</span></a></a> on <a href='https://www.quora.com'>Quora</a><script type="text/javascript" src="https://www.quora.com/widgets/content"></script></span>
+                                </div>
+                                <div class="carousel-item">
+                                    <span class='quora-content-embed d-block w-100' data-name='Do-you-consider-Computer-Science-to-be-math-engineering-or-science/answer/Tanmay-Bhagwat-4'>Read <a class='quora-content-link' data-width='560' data-height='260' href='https://www.quora.com/Do-you-consider-Computer-Science-to-be-math-engineering-or-science/answer/Tanmay-Bhagwat-4' data-type='answer' data-id='73222403' data-key='d9dcebb0ae63c892e685f2a5776dd41e' load-full-answer='False' data-embed='vdkhtwi'><a href='https://www.quora.com/Tanmay-Bhagwat-4'>Tanmay Bhagwat</a>&#039;s <a href='/Do-you-consider-Computer-Science-to-be-math-engineering-or-science#ans73222403'>answer</a> to <a href='/Do-you-consider-Computer-Science-to-be-math-engineering-or-science' ref='canonical'><span class="rendered_qtext">Do you consider Computer Science to be math, engineering, or science?</span></a></a> on <a href='https://www.quora.com'>Quora</a><script type="text/javascript" src="https://www.quora.com/widgets/content"></script></span>
+                                </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="list music aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Favourite music</h2>
+                        <div class="content">
+                            <iframe src="https://open.spotify.com/embed/album/3T4tUhGYeRNVUGevb0wThu" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
@@ -313,6 +363,16 @@
     <!-- ******FOOTER****** --> 
     <footer class="footer">
         <div class="container text-center">
+                <!-- hitwebcounter Code START --><br>
+                <h3 style="color: #EDF5E1;"><strong>Visitor Count</strong></h3>
+                <a href="http://www.hitwebcounter.com" target="_blank">
+                <img src="http://hitwebcounter.com/counter/counter.php?page=7056566&style=0005&nbdigits=5&type=page&initCount=0" title="IP Address" Alt="IP Address"   border="0" >
+                    </a>                                        <br/>
+                                        <!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com" title="" 
+                                        target="_blank" style="font-family: ; 
+                                        font-size: px; color: #; text-decoration:  ;">
+                                        </a>   <br>
+                            
                 <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out our commercial license options via our website: themes.3rdwavemedia.com */-->
                 <strong>&copy; 2019 by Tanmay Bhagwat</strong><br><small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for <strong>FREE</strong> under the <a class="dotted-link" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 License</a></small>
         </div><!--//container-->
